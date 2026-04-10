@@ -1,1 +1,10 @@
-a
+# Intro
+
+Role: used to connect to a virtual terminal of another computer. 
+
+Users:
+-> The used is asked for a suername and password.
+-> listen for incoming connections on port 23. 
+
+ex) Telnet server: telnetd
+  1. 
