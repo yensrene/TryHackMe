@@ -1,10 +1,10 @@
 # Protocols and Servers
-
+- If cleartext(or not encrypted), use telnet or netcat. 
 ## Table of Contents
 
 - [Telnet](#Telnet)
 - [Hypertext Transfer Protocol](#HTTP)
-- File Transfer Protocol
+- [File Transfer Protocol](#FTP)
 - Simple Mail Trnasfer Protocol
 - Post Office Protocol 3
 - Internet Message Access Protocol
@@ -31,3 +31,23 @@ Ex) Using telnet to request a page from a web server.
 1. connect to port 80 > telnet MACHINE_IP 80
 2. Type > GET /index.html HTTP/1.1 to retrieve the page index.html or GET / HTTP/1.1 to retrieve the default page.
 3. Provide some value for the host like > host: telnet and press the Enter key twice.
+
+Three popular choices for HTTP servers:
+1. Apache
+2. Internet Information Services (IIS)
+3. nginx
+
+The most popular web browsers:
+1. Chomme by Google
+2. Edge by Microsoft
+3. Firefox by Mozilla
+4. Safari by Apple
+
+
+### FTP
+
+It was developed to transfer files between different computers with different systems efficient. 
+Also, it sends and receives data as cleartext. -> FTP server & FPT client
+
+* port 21 is default.
+* 
