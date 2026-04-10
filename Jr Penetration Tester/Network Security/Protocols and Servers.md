@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Telnet](#Telnet)
-- Hypertext Transfer Protocol
+- [Hypertext Transfer Protocol](#HTTP)
 - File Transfer Protocol
 - Simple Mail Trnasfer Protocol
 - Post Office Protocol 3
@@ -20,7 +20,7 @@ For the Users:
 It is no longer secure, anyone capturing your network traffic will discover your username and passwords.
 Instead SSH is used. 
 
-### Hypertext Transfer Protocol
+### HTTP
 
 It's used to transfer web pages. Not Encrypted.
 <img width="1016" height="333" alt="image" src="https://github.com/user-attachments/assets/ca9ab517-8b5f-4281-ba54-f3c21b58c318" />
