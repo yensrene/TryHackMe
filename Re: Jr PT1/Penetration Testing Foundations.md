@@ -7,10 +7,10 @@
 # Reconnaissance and Enumeration
 1) Enumeration: nmap -sV -sC -p- 10.67.155.72
 
-  22: SSH
-  80: web application running on Apache
-  3306: MySQL
-  8080: Apache default page
+  - 22: SSH
+  - 80: web application running on Apache
+  - 3306: MySQL
+  - 8080: Apache default page
   -> means that the application likely constructs SQL queries, and any input handling weakenesses could lead to SQL-related issues.
 
 2) To check the HTPP response headers: curl -I http://10.67.155.72
