@@ -23,7 +23,7 @@
   PHPSESSID
   - -> this cookie confirms that PHP session management is in use. 
 
--->> now, Technology Stack: Apache + PHP+MySQL - a classic LAMP Configuration
+> now, Technology Stack: Apache + PHP+MySQL - a classic LAMP Configuration
 
 * LAMP Stack:
   - Linux(Operating System)
@@ -98,7 +98,8 @@ accept attribute restricts the file type.
    ```
    curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=hostname"
    ```
--->> Now, Hostname, kernel version, and executing any command on the system.
+> Now, Hostname, kernel version, and executing any command on the system.
+
 * www-data is the default user for the Apache web server on Ubujntu
 
 4) Reading Sensitive file 
