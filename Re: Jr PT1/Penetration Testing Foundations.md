@@ -146,8 +146,8 @@ Writing the report for this engagement:
 
 # Conclusion
 
-1. Enumeration
-2. Small flaws chain into big compromises
-3. Client-side restrictions are not security.
-4. Password reset mechanisms deserve careful attention.
-5. Think like an attacker, report like a consultant. 
+1. Enumeration (the application's structure, headers, endpoints, and behavior)
+3. Small flaws chain into big compromises (IDOR, weak password resets, and upload bypasses)
+4. Client-side restrictions are not security. (accept attribute. Use Allowlist rather than Blocklist that missed alternative PHP extensions)
+5. Password reset mechanisms deserve careful attention.
+6. Think like an attacker, report like a consultant. 
