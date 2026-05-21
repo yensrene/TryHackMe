@@ -2,7 +2,7 @@
 ### Insecure Direct Object Reference (IDOR) - Access data belonging to other users
 ### Weak password reset - Take over an account through a flawed reset mechanism
 ### Admin panel access - Escalate from a regular user to an administrator
-## #Remote code execution - Leverage admin functionality to execute commands on the server
+### Remote code execution - Leverage admin functionality to execute commands on the server
 
 # Reconnaissance and Enumeration
 1) Enumeration: nmap -sV -sC -p- 10.67.155.72
