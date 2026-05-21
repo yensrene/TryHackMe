@@ -11,11 +11,12 @@
   - 80: web application running on Apache
   - 3306: MySQL
   - 8080: Apache default page
-  -> means that the application likely constructs SQL queries, and any input handling weakenesses could lead to SQL-related issues.
+  - -> means that the application likely constructs SQL queries, and any input handling weakenesses could lead to SQL-related issues.
 
 2) To check the HTPP response headers: curl -I http://10.67.155.72
   Apache/2.4.58 (Ubuntu)
-  PHPSESSID -> this cookie confirms that PHP session management is in use. 
+  PHPSESSID
+  - -> this cookie confirms that PHP session management is in use. 
 
 -->> now, Technology Stack: Apache + PHP+MySQL - a classic LAMP Configuration
 
