@@ -42,7 +42,7 @@
 
 
 # IDOR
-  <ins> what we know: an authenticated session & the application's structure </ins>
+  what we know:  <ins>an authenticated session & the application's structure </ins>
 
 
 
