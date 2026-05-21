@@ -20,10 +20,10 @@
 -->> now, Technology Stack: Apache + PHP+MySQL - a classic LAMP Configuration
 
 * LAMP Stack:
-  Linux(Operating System)
-  Apache(HTTP Webserver)
-  MySQL(Database)
-  PHP/Pearl/Python(Programming Language)
+  - Linux(Operating System)
+  - Apache(HTTP Webserver)
+  - MySQL(Database)
+  - PHP/Pearl/Python(Programming Language)
   -> secure, mature protocol. open source, non-proprietary. flexibility to select the right components for specific projects or business requirements.
   -> Others:WAMP(Microsoft Windows), MAMP(Mac OPS), WIMP(Windows, Internet Information Services webserver from Microsoft)
 
