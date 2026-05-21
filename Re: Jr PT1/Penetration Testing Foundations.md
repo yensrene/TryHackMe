@@ -5,8 +5,10 @@
 ### 5. Remote code execution - Leverage admin functionality to execute commands on the server
 
 # Reconnaissance and Enumeration
-1) Enumeration: nmap -sV -sC -p- 10.67.155.72
-
+1) Enumeration:
+   ```
+   nmap -sV -sC -p- 10.67.155.72
+  
   - 22: SSH
   - 80: web application running on Apache
   - 3306: MySQL
