@@ -6,8 +6,7 @@
 
 # Reconnaissance and Enumeration
 1) Enumeration:
-   ```
-   nmap -sV -sC -p- 10.67.155.72
+   ``` nmap -sV -sC -p- 10.67.155.72
   
   - 22: SSH
   - 80: web application running on Apache
