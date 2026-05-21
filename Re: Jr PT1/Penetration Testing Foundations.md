@@ -44,8 +44,12 @@
 # IDOR
   what we know:  <ins>an authenticated session & the application's structure </ins>
 
+  It uses a predictable identifier to reference objects.
+
+  http://10.67.155.72/profile.php?id=6
 
 
+# Weak Password Reset
 
 
 
