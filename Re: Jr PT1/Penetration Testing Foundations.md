@@ -41,7 +41,8 @@
 
 
 
-
+# IDOR
+  <ins> what we know: an authenticated session & the application's structure </ins>
 
 
 
