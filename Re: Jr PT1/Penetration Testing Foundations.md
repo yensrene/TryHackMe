@@ -29,11 +29,11 @@ Remote code execution - Leverage admin functionality to execute commands on the 
 
 3) To discover what directories and files exist beyond what the navigtation bar shows: gobuster dir -u http://10.67.155.72 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php -x php
 
-  /admin - An admin panel exists, but it redirects to the login page. We will need credentials to access it.
-  /api - An API endpoint is present. APIs often expose data in ways the frontend does not.
-  /reset.php - A password reset page. Reset mechanisms are frequently implemented insecurely.
-  /uploads - An uploads directory. If we can upload files, this could be a path to code execution.
-  /profile.php and /dashboard.php - These require authentication, so we need to be logged in to access them.
+  - /admin - An admin panel exists, but it redirects to the login page. We will need credentials to access it.
+  - /api - An API endpoint is present. APIs often expose data in ways the frontend does not.
+  - /reset.php - A password reset page. Reset mechanisms are frequently implemented insecurely.
+  - /uploads - An uploads directory. If we can upload files, this could be a path to code execution.
+  - /profile.php and /dashboard.php - These require authentication, so we need to be logged in to access them.
 
 4) Investigate the api endpoint from gobuster: curl http://10.67.155.72/api/
   {"endpoints":["\/api\/user","\/api\/jobs","\/api\/applications"]}
