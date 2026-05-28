@@ -9,10 +9,10 @@
   7. Actions on Objectives: carry out further actions such as data exfiltration or other system's exploitation
 
 ## 1) Reconnaissance
-  Passive Reconnaissance: gathering information without noise
+  - Passive Reconnaissance: gathering information without noise
     ex) WHOIS and DNS databases. 
      > Google Dorking: using search engines to reveal sensitive information and confidential files.
-  Active Reconnaissance: gathering information that require some form of interatiction with the target organisation.
+  - Active Reconnaissance: gathering information that require some form of interatiction with the target organisation.
     ex) network port scanning, physics reconnaissance
     *Countermeasure: minimising public information exposure.*
     
@@ -35,12 +35,12 @@
   *Countermeasure: email and web filtering, Web applicaiton firewalls(WAFs), network monitoring, patch management*
 
 ## 4) Exploitation
-zero-day exploit: an exploit that is made available before the vendor becomes aware that a vulnerability exists in their product
-the most straightforward approach: targeting a password-based authentication system.
+- zero-day exploit: an exploit that is made available before the vendor becomes aware that a vulnerability exists in their product
+- the most straightforward approach: targeting a password-based authentication system.
     *Countermeasure: multi-factor authentication(MFA), Intrusion Prevention Systems(IPSs), Web Application Firewalls(WAFs)*
 
 ## 5) Installation
-  creating scheduled tasks in MS Windows or setting a cron job in Linux systems
+  - creating scheduled tasks in MS Windows or setting a cron job in Linux systems
   to modify startup scripts or configuration files. 
   Install a new service in Windows or a daemon in Linux systems
 
@@ -57,7 +57,7 @@ common application layer protocols such as HTTP, HTTPS, DNS, and SMTP for C2 com
 encrypted channels such as HTTPs
 DNS tunnelling.
 encoding data within DNS requests. 
-  commonly used media platforms: X direct messages, cloud services like Dropbox and Google Docs for data exfiltration.
+- commonly used media platforms: X direct messages, cloud services like Dropbox and Google Docs for data exfiltration.
   DGA. 
   Fast Flux
 *Countermeasures: IDS, IPS watch for unusual traffic patterns and volumes and connections to known malicious IP addresses.*
