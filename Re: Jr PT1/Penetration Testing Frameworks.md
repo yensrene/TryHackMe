@@ -1,0 +1,5 @@
+- Open Source Security Testing Methodology Manual
+- OWASP Web Security Testing Guide
+- NIST Special Publication 800-115
+- Penetration Testing Execution Standard
+- Information Systems SEcurity Assessment Framework
