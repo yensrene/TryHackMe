@@ -65,7 +65,8 @@ encoding data within DNS requests.
 > HTTPS: protocol the attacker use to smuggle his data as encrypted web traffic
 
 
-
+## 7) Actions on Objectives
+*Countermeasures: Data Loss Prevention(DLP) prevents unauthorised data exfiltration.
 
 
 
