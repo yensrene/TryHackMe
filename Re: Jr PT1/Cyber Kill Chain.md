@@ -17,6 +17,8 @@
   Active Reconnaissance: gathering information that require some form of interatiction with the target organisation.
     ex) network port scanning, physics reconnaissance
 
+    _Countermeasures_
+
 ## 2) Weaponisation
   creates a payload tailored to exploit the discovered weaknesses. 
   Exploit kit: an automated platform containing various exploits for various vulnerabilities.
