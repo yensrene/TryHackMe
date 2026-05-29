@@ -30,3 +30,16 @@
 - HTTPS Encryption: Encypts command and control traffic
 
 ### Steps to compromise a web application through vulnearbility chaining
+1. Enumerate directories and discover admin panel
+2. Exploit IDOR to discover administrator email
+3. Reset admin password using exposed token
+4. Upload web shell through admin file upload
+
+### Broad coverage helps assess the overall security posture rather than focusing on single attack paths.'
+
+### HTTP Method
+- DELETE: DELETE requests remove resources but do not upload files.
+- HEAD: HEAD requests retrieve headers only and cannot upload files.
+- GET: GET requests retrieve data from servers but cannot upload files.
+- OPTIONS: OPTIONS requests query server capabilities but do not upload files.
+- POST: POST request are used to submit data including file uploads to web servers.
