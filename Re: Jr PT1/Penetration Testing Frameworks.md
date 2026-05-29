@@ -19,3 +19,14 @@
 - Wireless Communications (SPECSEC): Wi-Fi, Bluetooth, RFID, and other electromagnetic signals
 - Telecommunications (COMSEC): Phone systems, VoIP, fax, and modem infrastructure
 - Data Networks (DATASEC): Network services, firewalls, and application-layer protocols
+
+
+#Recap
+
+### C2 Evasion Technique
+- Domain Generation Algorithm: Creates thousands of domains with few registered
+- Fast Flux: Rapidly changes IP addresses for one domain
+- DNS Tunnelling: Hides data in DNS queries
+- HTTPS Encryption: Encypts command and control traffic
+
+### Steps to compromise a web application through vulnearbility chaining
