@@ -17,3 +17,9 @@ Email Protocols:
 - **SMTP: Simple Mail Transfer Protocol**
 - **POP3: Post Office Protocol version 3**
 - **IMAP: Internet MEssage Access Protocol)**
+
+SMTP Ports
+-------
+|Number|Encryption|
+---------
+|25|optional and negotiated via STARTTLS|
