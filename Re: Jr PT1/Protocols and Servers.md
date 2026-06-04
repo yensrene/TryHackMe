@@ -18,8 +18,8 @@ Email Protocols:
 - **POP3: Post Office Protocol version 3**
 - **IMAP: Internet MEssage Access Protocol)**
 
-SMTP Ports
--------
+SMTP Ports:
+
 |Number|Encryption|
----------
+|-----|----|
 |25|optional and negotiated via STARTTLS|
