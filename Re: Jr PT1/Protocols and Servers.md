@@ -14,6 +14,6 @@ Components:
 4. MDA: Mail Delivery Agent
 
 
-**SMTP: Simple Mail Transfer Protocol**
-**POP3: Post Office Protocol version 3**
-**IMAP: Internet MEssage Access Protocol)**
+- **SMTP: Simple Mail Transfer Protocol**
+- **POP3: Post Office Protocol version 3**
+- **IMAP: Internet MEssage Access Protocol)**
