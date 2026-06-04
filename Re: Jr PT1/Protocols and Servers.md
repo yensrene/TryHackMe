@@ -13,7 +13,7 @@ Components:
 3. MTA: Mail Transfer Agent
 4. MDA: Mail Delivery Agent
 
-
+Email Protocols:
 - **SMTP: Simple Mail Transfer Protocol**
 - **POP3: Post Office Protocol version 3**
 - **IMAP: Internet MEssage Access Protocol)**
